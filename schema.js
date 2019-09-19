@@ -1,4 +1,4 @@
-exports.typeDefs = `
+/*exports.typeDefs = `
 
 type Publication {
   _id: ID
@@ -34,4 +34,4 @@ type Mutation {
   signupUser(username: String!, email: String!, password: String!): Token
 }
 
-`;
+`;*/
