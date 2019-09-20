@@ -16,11 +16,14 @@ pushd D:\
 && rmdir /s /Q D:\express-apollo-graphql-starter\express-apollo-graphql-starter2
 && npm run server
 
-• /variables.env > change user:password to your own Atlas mongo DB data credentials.
+### • To Change
+/variables.env > change user:password to your own Atlas mongo DB data credentials.
 	
-• /server.js     > uncomment //Connect to Atlas remote mongo database	
+/server.js     > uncomment //Connect to Atlas remote mongo database	
 
-• localhost:4444/graphiql > 
+### • Run Backend
+
+localhost:4444/graphiql > 
 
 mutation{
   addPublication(
@@ -46,7 +49,10 @@ query{
 	}
 }
 
-• Optional :
+### • Vanilla frontend
+localhost:4444
+
+### • Optional :
 
 && npm install -g create-react-app 
 && create-react-app client
@@ -60,7 +66,7 @@ query{
 
 Frontend react client app > localhost:3000
 
-• Deploy to heroku:
+### • Deploy to heroku:
 
 /package.json:
   "engines": { "node": "v8.9.4" },
