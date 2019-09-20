@@ -18,7 +18,7 @@ pushd D:\
 
 in localhost:4444/graphiql
 
-mutation{
+graphiql > mutation{
   addPublication(
     name         : "pub 1"
     description  : "description of the pub1"
@@ -33,7 +33,7 @@ mutation{
     }
 }
 
-query{
+graphiql > query{
   getAllPublications{
   	_id
   	name
