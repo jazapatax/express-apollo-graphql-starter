@@ -1,4 +1,4 @@
-# express-apollo-graphql-starter (use null-point-sys/express-apollo-graphql-starter2)
+# apollo-express-graphql-starter (use null-point-sys/apollo-express-graphql-starter2)
 
 Node JS NPM Windows CMD automation script to run express server in localhost:4444/graphiql browser url with package.json apollo graphql dependencies and frontend in react in localhost:3000
 
@@ -14,19 +14,7 @@ pushd D:\
 && move server.js D:\express-apollo-graphql-starter 
 && cd D:\express-apollo-graphql-starter 
 && rmdir /s /Q D:\express-apollo-graphql-starter\express-apollo-graphql-starter2
-&& npm install -g create-react-app 
-&& create-react-app client
-&& mkdir D:\express-apollo-graphql-starter\client\src\components
-&& move D:\express-apollo-graphql-starter\client\src\App.js D:\express-apollo-graphql-starter\client\src\components
-&& move D:\express-apollo-graphql-starter\client\src\App.css D:\express-apollo-graphql-starter\client\src\components
-&& mkdir D:\express-apollo-graphql-starter\client\src\queries
-&& cd D:\express-apollo-graphql-starter\client\src\queries
-&& type nul > index.js
-&& npm run dev
-
-Frontend react client app > localhost:3000
-
-Backend apollo-graphql > localhost:4444/graphiql
+&& npm run server
 
 localhost:4444/graphiql > 
 
@@ -55,3 +43,17 @@ query{
   	likes
 	}
 }
+
+Optional :
+
+&& npm install -g create-react-app 
+&& create-react-app client
+&& mkdir D:\express-apollo-graphql-starter\client\src\components
+&& move D:\express-apollo-graphql-starter\client\src\App.js D:\express-apollo-graphql-starter\client\src\components
+&& move D:\express-apollo-graphql-starter\client\src\App.css D:\express-apollo-graphql-starter\client\src\components
+&& mkdir D:\express-apollo-graphql-starter\client\src\queries
+&& cd D:\express-apollo-graphql-starter\client\src\queries
+&& type nul > index.js
+&& npm run dev
+
+Frontend react client app > localhost:3000
