@@ -1,4 +1,4 @@
-/*const jwt = require("jsonwebtoken");
+const jwt = require("jsonwebtoken");
 
 const createToken = (user, secret, expiresIn) => {
   const { username, email } = user;
@@ -41,4 +41,4 @@ exports.resolvers = {
       return { token: createToken(newUser, process.env.SECRET, "1hr") };
     }
   }
-};*/
+};
