@@ -18,9 +18,9 @@ pushd D:\
 && create-react-app client
 && npm run dev
 
-in localhost:3000 frontend client app
+in localhost:3000 frontend react client app
 
-in localhost:4444/graphiql
+in localhost:4444/graphiql backend apollo-graphql
 
 graphiql > mutation{
   addPublication(
