@@ -62,10 +62,10 @@ Frontend react client app > localhost:3000
 
 • Deploy to heroku:
 
-/server.js...
-
-Add to package.json:
+/package.json:
   "engines": { "node": "v8.9.4" },
+  
+/server.js...
 
 comment app.use("/graphiql",...
 
