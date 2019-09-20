@@ -64,6 +64,9 @@ Frontend react client app > localhost:3000
 
 /server.js...
 
+Add to package.json:
+  "engines": { "node": "v8.9.4" },
+
 comment app.use("/graphiql",...
 
 After const PORT = process.env.PORT || 4444;
