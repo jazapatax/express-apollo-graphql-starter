@@ -15,3 +15,20 @@ pushd D:\
 && cd D:\express-apollo-graphql-starter 
 && rmdir /s /Q D:\express-apollo-graphql-starter\express-apollo-graphql-starter2 
 && npm run server
+
+in localhost:4444/graphiql
+
+mutation{
+  addPublication(
+    name         : "pub 1"
+    description  : "description of the pub1"
+    category     : "category 1"
+    instructions : "asas fas ad"
+    username     : "username 1"){
+      name
+      category
+      description
+      instructions
+      username
+    }
+}
