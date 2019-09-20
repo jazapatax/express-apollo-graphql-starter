@@ -3,7 +3,6 @@
   "version": "1.0.0",
   "description": "Servidor express backend para proyectos React-Apollo-GraphQL",
   "main": "server.js",
-  "engines": { "node": "v8.9.4" },
   "scripts": {
     "start"  : "node server.js",
     "server" : "nodemon server.js",
