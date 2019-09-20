@@ -1,8 +1,6 @@
 # express-apollo-graphql-starter (use null-point-sys/express-apollo-graphql-starter2)
 
-Node JS NPM Windows CMD automation script to run express server in localhost:4444/graphiql browser url with package.json apollo graphql dependencies
-
-(Script de automatización de Node JS NPM en la consola de windows para arrancar servidor express en la url localhost:4444 con package.json con dependencias para apollo-graphql)
+Node JS NPM Windows CMD automation script to run express server in localhost:4444/graphiql browser url with package.json apollo graphql dependencies and frontend in react in localhos:3000
 
 pushd D:\ 
 && git clone https://github.com/null-point-sys/express-apollo-graphql-starter.git 
@@ -16,13 +14,21 @@ pushd D:\
 && rmdir /s /Q D:\express-apollo-graphql-starter\express-apollo-graphql-starter2
 && npm install -g create-react-app 
 && create-react-app client
+&& mkdir D:\express-apollo-graphql-starter\client\src\components
+&& move D:\express-apollo-graphql-starter\client\src\App.js D:\express-apollo-graphql-starter\client\src\components
+&& move D:\express-apollo-graphql-starter\client\src\App.css D:\express-apollo-graphql-starter\client\src\components
+&& mkdir D:\express-apollo-graphql-starter\client\src\queries
+&& cd D:\express-apollo-graphql-starter\client\src\queries
+&& type nul > index.js
 && npm run dev
 
-in localhost:3000 > frontend react client app
+Frontend react client app > localhost:3000
 
-in localhost:4444/graphiql > backend apollo-graphql
+Backend apollo-graphql > localhost:4444/graphiql
 
-graphiql > mutation{
+localhost:4444/graphiql > 
+
+mutation{
   addPublication(
     name         : "pub 1"
     description  : "description of the pub1"
@@ -37,7 +43,9 @@ graphiql > mutation{
     }
 }
 
-graphiql > query{
+localhost:4444/graphiql > 
+
+query{
   getAllPublications{
   	_id
   	name
