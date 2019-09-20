@@ -32,3 +32,12 @@ mutation{
       username
     }
 }
+
+query{
+  getAllPublications{
+  	_id
+  	name
+  	category
+  	likes
+	}
+}
