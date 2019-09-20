@@ -59,3 +59,21 @@ query{
 && npm run dev
 
 Frontend react client app > localhost:3000
+
+• Deploy to heroku:
+
+/server.js...
+
+comment app.use("/graphiql",...
+
+After const PORT = process.env.PORT || 4444;
+Add:
+const path  = require("path");
+if(process.env.NODE_ENV === "production"){
+	app.use(express.static('client/build'));
+	app.get('*', (req, res ) => { res.sendFile(path.resolve(__dirname, "client", "build", "index.html")); })
+}
+
+if have /client/src/index.js change cons client ApolloClient url to the heroku url.
+
+heroku account > settings > Config Vars add : the 4 config vars of variables.env file
