@@ -30,7 +30,6 @@ type Token {
 
 type Mutation {
   addPublication(name: String!, description: String!, category: String!, instructions: String!, username: String): Publication
-
   signupUser(username: String!, email: String!, password: String!): Token
 }
 
