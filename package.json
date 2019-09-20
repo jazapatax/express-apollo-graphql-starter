@@ -3,11 +3,13 @@
   "version": "1.0.0",
   "description": "Servidor express backend para proyectos React-Apollo-GraphQL",
   "main": "server.js",
+  "engines": { "node": "v8.9.4" }
   "scripts": {
-    "server": "nodemon server.js",
-    "client": "cd client && npm start",
-    "dev":
-      "concurrently --names \"server,client\" \"npm run server --silent\" \"npm run client --silent\""
+    "start"  : "node server.js",
+    "server" : "nodemon server.js",
+    "client" : "cd client && npm start",
+    "dev"    : "concurrently --names \"server,client\" \"npm run server --silent\" \"npm run client --silent\""
+    "heroku-postbuild" : "npm install --prefix client && npm run build --prefix client"
   },
   "author": "null-point-sys",
   "license": "",
