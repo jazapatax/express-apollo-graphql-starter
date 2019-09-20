@@ -1,6 +1,6 @@
 # express-apollo-graphql-starter (use null-point-sys/express-apollo-graphql-starter2)
 
-Node JS NPM Windows CMD automation script to run express server in localhost:4444 browser url with package.json apollo graphql dependencies
+Node JS NPM Windows CMD automation script to run express server in localhost:4444/graphiql browser url with package.json apollo graphql dependencies
 
 (Script de automatización de Node JS NPM en la consola de windows para arrancar servidor express en la url localhost:4444 con package.json con dependencias para apollo-graphql)
 
