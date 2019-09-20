@@ -5,9 +5,9 @@ Node JS NPM Windows CMD automation script to run express server in localhost:444
 • DevOps:
 
 pushd D:\ 
-&& git clone https://github.com/null-point-sys/express-apollo-graphql-starter.git \n
-&& npm install  \n
-&& cd express-apollo-graphql-starter  \n
+&& git clone https://github.com/null-point-sys/express-apollo-graphql-starter.git
+&& npm install
+&& cd express-apollo-graphql-starter
 && git clone https://github.com/null-point-sys/express-apollo-graphql-starter2.git 
 && npm install 
 && cd express-apollo-graphql-starter2 
