@@ -13,8 +13,12 @@ pushd D:\
 && cd express-apollo-graphql-starter2 
 && move server.js D:\express-apollo-graphql-starter 
 && cd D:\express-apollo-graphql-starter 
-&& rmdir /s /Q D:\express-apollo-graphql-starter\express-apollo-graphql-starter2 
-&& npm run server
+&& rmdir /s /Q D:\express-apollo-graphql-starter\express-apollo-graphql-starter2
+&& npm install -g create-react-app 
+&& create-react-app client
+&& npm run dev
+
+in localhost:3000 frontend client app
 
 in localhost:4444/graphiql
 
