@@ -83,6 +83,6 @@ if(process.env.NODE_ENV === "production"){
 	app.get('*', (req, res ) => { res.sendFile(path.resolve(__dirname, "client", "build", "index.html")); })
 }
 
-if have /client/src/index.js change cons client ApolloClient url to the heroku url.
+if have /client/src/index.js change cons client ApolloClient url to the heroku url: "https://myappname.herokuapp.com/graphql"
 
 heroku account > settings > Config Vars add : the 4 config vars of variables.env file
