@@ -86,4 +86,6 @@ if(process.env.NODE_ENV === "production"){
 
 if have /client/src/index.js change cons client ApolloClient url to the heroku url: "https://myappname.herokuapp.com/graphql"
 
-heroku account > settings > Config Vars add : the 4 config vars of variables.env file
+heroku account > settings > Config Vars add : the 2 config vars of variables.env file
+
+script.js > line 45 > fetch(`https://name-of-my-app.herokuapp.com/graphql`, options)
