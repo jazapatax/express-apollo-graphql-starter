@@ -52,6 +52,17 @@ query{
 ### • Vanilla frontend
 localhost:4444
 
+### • Deploy to heroku:
+
+1. change /package.json: for your own node and npm versions
+  "engines": { "node": "v8.9.4" },
+  "engines": { "npm": "v6.0.1" },
+  
+2. heroku account > settings > Config Vars add : the 2 config vars of variables.env file
+
+3. script.js > line 45 > fetch(`https://name-of-my-app.herokuapp.com/graphql`, options)
+
+----------------
 ### • Optional :
 
 && npm install -g create-react-app 
@@ -65,12 +76,7 @@ localhost:4444
 && npm run dev
 && yarn start
 
-Frontend react client app > localhost:3000
-
-### • Deploy to heroku:
-
-/package.json:
-  "engines": { "node": "v8.9.4" },
+Frontend react client app > localhost:3000  
   
 /server.js...
 
@@ -86,6 +92,8 @@ if(process.env.NODE_ENV === "production"){
 
 if have /client/src/index.js change cons client ApolloClient url to the heroku url: "https://myappname.herokuapp.com/graphql"
 
-heroku account > settings > Config Vars add : the 2 config vars of variables.env file
+change package.json with the heroku post-build and the client dependencies.
 
-script.js > line 45 > fetch(`https://name-of-my-app.herokuapp.com/graphql`, options)
+
+
+
