@@ -1,6 +1,6 @@
 ## Crea automáticamente un Backend Apollo Server para graphql con conexión a Atlas Mongo Db: 
 
-El repositorio https://github.com/null-point-sys/express-apollo-graphql-starter.git contiene: 
+Este repositorio (https://github.com/null-point-sys/express-apollo-graphql-starter.git) contiene: 
 
 - Las dependencias en package.json
 - Los modelos Publication.js y User.js (documentos de Atlas)
