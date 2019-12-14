@@ -35,9 +35,7 @@ Una vez git clona este primer repositorio https://github.com/null-point-sys/expr
 En el archivo /variables.env cambia user:password por tus propias credenciales de Atlas mongo DB.
 En el archivo /server.js descomenta las lineas -> //Connect to Atlas remote mongo database	
 
-### • 2 consultas para probar nuestra conexión con la BD en el Backend:
-
-localhost:4444/graphiql > 
+### • Consulta para crear el documento publications en atlas desde localhost:4444/graphiql:
 
 mutation{
   addPublication(
@@ -53,6 +51,8 @@ mutation{
       username
     }
 }
+
+### • Consulta para cargar las publicaciones desde atlas en localhost:4444/graphiql:
 
 query{
   getAllPublications{
