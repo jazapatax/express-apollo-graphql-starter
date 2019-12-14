@@ -2,12 +2,12 @@
 
 Este repositorio (https://github.com/null-point-sys/express-apollo-graphql-starter.git) contiene: 
 
-- Las dependencias en package.json
-- Los modelos Publication.js y User.js (documentos de Atlas)
-- Los resolvers
-- El esquema de datos
-- index.html y script.js como front vanilla
-- El archivo de variables de entorno variables.env
+- Las dependencias (package.json)
+- Los modelos (models/Publication.js y models/User.js) (documentos de Atlas)
+- Los resolvers (resolvers.js)
+- El esquema de datos (schema.js)
+- El front vanilla (index.html y script.js)
+- Las variables de entorno (variables.env)
 
 Una vez git clona este primer repositorio en la ruta C:\express-apollo-graphql-starter el bash script ingresa a esta carpeta clona seguidamente el repositorio https://github.com/null-point-sys/express-apollo-graphql-starter2.git que contiene solo un archivo el server.js apollo express del proyecto y a continuación npm instala las dependencias desde package.json e instala en paralelo node js (node_modules), al finalizar se inicializa el proyecto con npm run server: el BACK graphiql queda corriendo en el navegador en localhost:4444/graphiql y el FRONT en vanilla javascript queda corriendo con localhost:4444
 
