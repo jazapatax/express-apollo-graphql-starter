@@ -1,12 +1,20 @@
-## Backend : express-apollo-graphql-starter (use null-point-sys/express-apollo-graphql-starter2) Frontend : vanilla with an easy deploy to heroku
+## Crea automáticamente un Backend Apollo Server para graphql con conexión a Atlas Mongo Db: 
 
-Node JS NPM Windows CMD automation script to run express server in localhost:4444/graphiql browser url with package.json apollo graphql dependencies.
+El repositorio https://github.com/null-point-sys/express-apollo-graphql-starter.git contiene: 
 
-### • DevOps:
+- Las dependencias en package.json
+- Los modelos Publication.js y User.js (documentos de Atlas)
+- Los resolvers
+- El esquema de datos
+- index.html y script.js como front vanilla
+- El archivo de variables de entorno variables.env
+
+Una vez git clona este primer repositorio en la ruta C:\express-apollo-graphql-starter el bash script ingresa a esta carpeta clona seguidamente el repositorio https://github.com/null-point-sys/express-apollo-graphql-starter2.git que contiene solo un archivo el server.js apollo express del proyecto y a continuación npm instala las dependencias desde package.json e instala en paralelo node js (node_modules), al finalizar se inicializa el proyecto con npm run server: el BACK graphiql queda corriendo en el navegador en localhost:4444/graphiql y el FRONT en vanilla javascript queda corriendo con localhost:4444
+
+### • Bash script automátizado para el sistema operativo windows:
 
 pushd C:\ 
 && git clone https://github.com/null-point-sys/express-apollo-graphql-starter.git
-&& npm install
 && cd express-apollo-graphql-starter
 && git clone https://github.com/null-point-sys/express-apollo-graphql-starter2.git 
 && npm install 
@@ -16,12 +24,12 @@ pushd C:\
 && rmdir /s /Q C:\express-apollo-graphql-starter\express-apollo-graphql-starter2
 && npm run server
 
-### • To Change
-/variables.env > change user:password to your own Atlas mongo DB data credentials.
-	
-/server.js     > uncomment //Connect to Atlas remote mongo database	
+### • Para conectar con tu base de datos en Atlas Mongo DB:
 
-### • Run Backend
+En el archivo /variables.env cambia user:password por tus propias credenciales de Atlas mongo DB.
+En el archivo /server.js descomenta las lineas -> //Connect to Atlas remote mongo database	
+
+### • 2 consultas para probar nuestra conexión con la BD en el Backend:
 
 localhost:4444/graphiql > 
 
@@ -49,26 +57,28 @@ query{
 	}
 }
 
-### • Vanilla frontend
+### • Para probar el front end Vanilla
+
 localhost:4444
 
-### • Deploy to heroku:
+### • Deploy a heroku:
 
-1. change /package.json: for your own node and npm versions
+1. En el archivo /package.json ingresa tus propias versiones de node y npm que tienes corriendo en windows
   "engines": { "node": "v8.9.4" },
   "engines": { "npm": "v6.0.1" },
   
-2. heroku account > settings > Config Vars add : the 2 config vars of variables.env file
+2. En Heroku > settings > Config Vars y agrega las dos variables que tienes en el archivo variables.env
 
-3. script.js > line 45 > fetch(`https://name-of-my-app.herokuapp.com/graphql`, options)
+3. En el archivo del front vanilla script.js > line 45 > fetch(`https://name-of-my-app.herokuapp.com/graphql`, options)
+   ingresa la url de tu app heroku.
 
 ----------------
-### • Optional :
+### • Opcional instalar una aplicación frontend react para el proyecto :
 
 && npm install -g create-react-app 
 && npx create-react-app client
 && mkdir D:\express-apollo-graphql-starter\client\src\components
-&& move D:\express-apollo-graphql-starter\client\src\App.js D:\express-apollo-graphql-starter\client\src\components
+&& move D:\express-apo llo-graphql-starter\client\src\App.js D:\express-apollo-graphql-starter\client\src\components
 && move D:\express-apollo-graphql-starter\client\src\App.css D:\express-apollo-graphql-starter\client\src\components
 && mkdir D:\express-apollo-graphql-starter\client\src\queries
 && cd D:\express-apollo-graphql-starter\client\src\queries
@@ -78,21 +88,19 @@ localhost:4444
 
 Frontend react client app > localhost:3000  
   
-/server.js...
+En /server.js comentar app.use("/graphiql",...
 
-comment app.use("/graphiql",...
-
-After const PORT = process.env.PORT || 4444;
-Add:
+Después de const PORT = process.env.PORT || 4444;
+Agregar:
 const path  = require("path");
 if(process.env.NODE_ENV === "production"){
 	app.use(express.static('client/build'));
 	app.get('*', (req, res ) => { res.sendFile(path.resolve(__dirname, "client", "build", "index.html")); })
 }
 
-if have /client/src/index.js change cons client ApolloClient url to the heroku url: "https://myappname.herokuapp.com/graphql"
+si tienes /client/src/index.js cambia cons client ApolloClient url a la url de heroku: "https://myappname.herokuapp.com/graphql"
 
-change package.json with the heroku post-build and the client dependencies.
+cambia package.json con las dependencias heroku post-build y client.
 
 
 
