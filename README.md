@@ -9,8 +9,6 @@ Este repositorio (https://github.com/null-point-sys/express-apollo-graphql-start
 - El front vanilla (index.html y script.js)
 - Las variables de entorno (variables.env)
 
-Una vez git clona este primer repositorio en la ruta C:\express-apollo-graphql-starter el bash script ingresa a esta carpeta clona seguidamente el repositorio https://github.com/null-point-sys/express-apollo-graphql-starter2.git que contiene solo un archivo el server.js apollo express del proyecto y a continuación npm instala las dependencias desde package.json e instala en paralelo node js (node_modules), al finalizar se inicializa el proyecto con npm run server: el BACK graphiql queda corriendo en el navegador en localhost:4444/graphiql y el FRONT en vanilla javascript queda corriendo con localhost:4444
-
 ### • Bash script automátizado para el sistema operativo windows:
 
 pushd C:\ 
@@ -23,6 +21,10 @@ pushd C:\
 && cd C:\express-apollo-graphql-starter 
 && rmdir /s /Q C:\express-apollo-graphql-starter\express-apollo-graphql-starter2
 && npm run server
+
+### • Explicación del flujo de este bash script automátizado para el sistema operativo windows:
+
+Una vez git clona este primer repositorio en la ruta C:\express-apollo-graphql-starter el bash script ingresa a esta carpeta clona seguidamente el repositorio https://github.com/null-point-sys/express-apollo-graphql-starter2.git que contiene solo un archivo el server.js apollo express del proyecto y a continuación npm instala las dependencias desde package.json e instala en paralelo node js (node_modules), al finalizar se inicializa el proyecto con npm run server: el BACK graphiql queda corriendo en el navegador en localhost:4444/graphiql y el FRONT en vanilla javascript queda corriendo con localhost:4444
 
 ### • Para conectar con tu base de datos en Atlas Mongo DB:
 
