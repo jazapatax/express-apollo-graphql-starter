@@ -22,6 +22,10 @@ pushd C:\
 && rmdir /s /Q C:\express-apollo-graphql-starter\express-apollo-graphql-starter2
 && npm run server
 
+### • Como poner a correr este bash script automátizado en mi equipo:
+
+Abre una consola de windows y pega todo el script anterior y dale enter.
+
 ### • Explicación del flujo de este bash script automátizado para el sistema operativo windows:
 
 Una vez git clona este primer repositorio en la ruta C:\express-apollo-graphql-starter el bash script ingresa a esta carpeta clona seguidamente el repositorio https://github.com/null-point-sys/express-apollo-graphql-starter2.git que contiene solo un archivo el server.js apollo express del proyecto y a continuación npm instala las dependencias desde package.json e instala en paralelo node js (node_modules), al finalizar se inicializa el proyecto con npm run server: el BACK graphiql queda corriendo en el navegador en localhost:4444/graphiql y el FRONT en vanilla javascript queda corriendo con localhost:4444
