@@ -76,7 +76,29 @@ localhost:4444
 2. En Heroku > settings > Config Vars y agrega las dos variables que tienes en el archivo variables.env
 
 3. En el archivo del front vanilla script.js > line 45 > fetch(`https://name-of-my-app.herokuapp.com/graphql`, options)
+
    ingresa la url de tu app heroku.
+   
+---------------
+### • Para probar el front vanilla desacoplado con un servidor apollo en codesanbox:
+
+Puedes descargar el archivo index.html y script.js y ejecutarlo desde cualquier navegador, no requiere instalaciones de paquetes desde npm ni instalar nodejs y en la consola del navegador obtendras los datos almacenados en el servidor. 
+
+En script.js linea 63 cambia el fetch hacia el apollo server: https://38r91.sse.codesandbox.io/:
+
+  fetch(`https://38r91.sse.codesandbox.io/`, options)
+			.then(res => res.json())
+			.then(renderPublications);
+			
+y en la línea 17 cambia el query:
+
+  const getpublicationsQuery = () => `{ teams {
+      id
+      institution
+      nickname
+      color
+      favorite
+    } }`;
 
 ----------------
 ### • Opcional instalar una aplicación frontend react para el proyecto :
