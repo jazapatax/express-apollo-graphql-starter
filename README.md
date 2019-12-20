@@ -84,7 +84,7 @@ localhost:4444
    ingresa la url de tu app heroku.
    
 ---------------
-### • Para probar el front vanilla desacoplado con un servidor apollo en codesanbox:
+### • Para probar el front vanilla desacoplado con un servidor apollo (standalone) en codesanbox:
 
 Puedes descargar el archivo index.html y script.js y ejecutarlo desde cualquier navegador, no requiere instalaciones de paquetes desde npm ni instalar nodejs y en la consola del navegador obtendras los datos almacenados en el servidor. 
 
