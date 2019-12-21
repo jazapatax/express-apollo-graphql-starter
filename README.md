@@ -81,8 +81,7 @@ El endpoint para hacer fetch desde vanilla es : http://localhost:4444/graphql
 ### 2. Probar el frontend vanilla (app.html) en local | apollo server en heroku (endpoint: appapollo.herokuapp.com/graphiql) | BD en Atlas
 
 • En el archivo /package.json ingresa tus propias versiones de node y npm que tienes corriendo en windows
-  "engines": { "node": "v8.9.4" },
-  "engines": { "npm": "v6.0.1" },
+  "engines": { "node": "v8.9.4","engines": { "npm": "v6.0.1" },
   
 • En Heroku > settings > Config Vars y agrega las dos variables que tienes en el archivo variables.env
 
