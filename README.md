@@ -10,7 +10,6 @@ Este repositorio (https://github.com/null-point-sys/express-apollo-graphql-start
 - Los modelos (models/Publication.js y models/User.js) (documentos de Atlas)
 - Los resolvers (resolvers.js)
 - El esquema de datos (schema.js)
-- El front vanilla (index.html y script.js)
 - Las variables de entorno (variables.env)
 
 ### • Bash script automátizado para el sistema operativo windows:
