@@ -73,7 +73,9 @@ query{
 
 ### • Para probar el front end Vanilla y cargar datos desde Atlas MongoDB
 
-localhost:4444
+Puedes descargar el archivo app.html desde https://github.com/null-point-sys/express-apollo-graphql-app.html.git 
+y accederlo desde cualquier navegador en tu equipo o celular (no requiere instalación).
+
 
 ---------------
 ### • Deploy a heroku para probar desde una dirección url en una instalación en un servidor web:
@@ -91,7 +93,7 @@ localhost:4444
 ---------------
 ### • Para probar el front vanilla desacoplado con un servidor apollo (standalone) en codesanbox:
 
-Puedes descargar el archivo app.html de  y ejecutarlo desde cualquier navegador, no requiere instalaciones de paquetes desde npm ni instalar nodejs y en la consola del navegador obtendras los datos almacenados en el servidor. 
+Puedes descargar el archivo app.html desde https://github.com/null-point-sys/express-apollo-graphql-app.html.git  y ejecutarlo desde cualquier navegador, no requiere instalaciones de paquetes desde npm ni instalar nodejs y en la consola del navegador obtendras los datos almacenados en el servidor. 
 
 En script.js linea 63 cambia el fetch hacia el apollo server: https://38r91.sse.codesandbox.io/:
 
