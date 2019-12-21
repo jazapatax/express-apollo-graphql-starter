@@ -71,11 +71,32 @@ query{
 	}
 }
 
-### • Para probar el front end Vanilla y cargar datos desde Atlas MongoDB
+### • Para probar el front end Vanilla, apollo server en localhost y cargar datos desde Atlas MongoDB:
 
 Puedes descargar el archivo app.html desde https://github.com/null-point-sys/express-apollo-graphql-app.html.git 
 y accederlo desde cualquier navegador en tu equipo o celular (no requiere instalación).
 
+El endpoint para hacer fetch desde vanilla es : http://localhost:4444/graphql
+
+### • Para probar el front vanilla, apollo server en codesanbox y cargar datos desde alli mismo:
+
+Puedes descargar el archivo app.html desde https://github.com/null-point-sys/express-apollo-graphql-app.html.git  y ejecutarlo desde cualquier navegador, no requiere instalaciones de paquetes desde npm ni instalar nodejs y en la consola del navegador obtendras los datos almacenados en un json en codesandbox. 
+
+En script.js linea 63 cambia el endpoint del fetch hacia el apollo server: https://38r91.sse.codesandbox.io/:
+
+  fetch(`https://38r91.sse.codesandbox.io/`, options)
+			.then(res => res.json())
+			.then(renderPublications);
+			
+y en la línea 17 cambia el query:
+
+  const getpublicationsQuery = () => `{ teams {
+      id
+      institution
+      nickname
+      color
+      favorite
+    } }`;
 
 ---------------
 ### • Deploy a heroku para probar desde una dirección url en una instalación en un servidor web:
@@ -91,25 +112,7 @@ y accederlo desde cualquier navegador en tu equipo o celular (no requiere instal
    ingresa la url de tu app heroku.
    
 ---------------
-### • Para probar el front vanilla desacoplado con un servidor apollo (standalone) en codesanbox:
 
-Puedes descargar el archivo app.html desde https://github.com/null-point-sys/express-apollo-graphql-app.html.git  y ejecutarlo desde cualquier navegador, no requiere instalaciones de paquetes desde npm ni instalar nodejs y en la consola del navegador obtendras los datos almacenados en el servidor. 
-
-En script.js linea 63 cambia el fetch hacia el apollo server: https://38r91.sse.codesandbox.io/:
-
-  fetch(`https://38r91.sse.codesandbox.io/`, options)
-			.then(res => res.json())
-			.then(renderPublications);
-			
-y en la línea 17 cambia el query:
-
-  const getpublicationsQuery = () => `{ teams {
-      id
-      institution
-      nickname
-      color
-      favorite
-    } }`;
 
 ----------------
 ### • Opcional instalar una aplicación frontend react para el proyecto :
