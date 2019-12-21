@@ -71,7 +71,7 @@ query{
 }
 
 ---------------
-### Probar el frontend Vanilla (app.html) apollo server en localhost y cargar datos desde Atlas MongoDB:
+### 1. Probar el frontend Vanilla (app.html) apollo server en localhost y cargar datos desde Atlas MongoDB:
 
 Puedes descargar el archivo app.html desde https://github.com/null-point-sys/express-apollo-graphql-app.html.git 
 y accederlo desde cualquier navegador en tu equipo o celular (no requiere instalación).
@@ -79,7 +79,7 @@ y accederlo desde cualquier navegador en tu equipo o celular (no requiere instal
 El endpoint para hacer fetch desde vanilla es : http://localhost:4444/graphql
 
 ---------------
-### Probar el frontend vanilla (app.html) apollo server en codesanbox y cargar datos desde alli mismo:
+### 2. Probar el frontend vanilla (app.html) apollo server en codesanbox y cargar datos desde alli mismo:
 
 Puedes descargar el archivo app.html desde https://github.com/null-point-sys/express-apollo-graphql-app.html.git  y ejecutarlo desde cualquier navegador, no requiere instalaciones de paquetes desde npm ni instalar nodejs y en la consola del navegador obtendras los datos almacenados en un json en codesandbox. 
 
