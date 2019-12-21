@@ -2,7 +2,7 @@
 
 image uploaded with : https://felixhayashi.github.io/ReadmeGalleryCreatorForGitHub/
 
-## Crea automáticamente un Backend Apollo Server para graphql en localhost con conexión a Atlas Mongo Db: 
+## B1 : Crea automáticamente un Backend Apollo Server para graphql en localhost (endpoint : http://localhost:4444/graphiql) con conexión a Atlas Mongo Db: 
 
 Este repositorio (https://github.com/null-point-sys/express-apollo-graphql-starter.git) contiene: 
 
@@ -31,17 +31,17 @@ Abre una consola de windows y pega todo el script anterior y dale enter.
 
 ### • Explicación del flujo de este bash script automátizado para el sistema operativo windows:
 
-Una vez git clona este primer repositorio https://github.com/null-point-sys/express-apollo-graphql-starter.git en la ruta C:\express-apollo-graphql-starter el bash script ingresa a esta carpeta y clona seguidamente el repositorio https://github.com/null-point-sys/express-apollo-graphql-starter2.git que contiene solo un archivo el server.js apollo express del proyecto y a continuación npm instala las dependencias desde package.json e instala en paralelo node js (node_modules), al finalizar se inicializa el proyecto con npm run server: el BACK graphiql queda corriendo en el navegador en localhost:4444/graphiql y el FRONT en vanilla javascript queda corriendo con localhost:4444
+Una vez git clona este primer repositorio https://github.com/null-point-sys/express-apollo-graphql-starter.git en la ruta C:\express-apollo-graphql-starter el bash script ingresa a esta carpeta y clona seguidamente el repositorio https://github.com/null-point-sys/express-apollo-graphql-starter2.git que contiene solo un archivo el server.js apollo express del proyecto y a continuación npm instala las dependencias desde package.json e instala en paralelo node js (node_modules), al finalizar se inicializa el proyecto con npm run server: el BACK graphiql queda corriendo en el navegador en http://localhost:4444/graphiql
 
 ---------------
-### Probar apollo server (backend) en localhost con conexión remota a Atlas Mongo DB
-
-### • Para conectar con tu base de datos en Atlas Mongo DB:
+### C: Para conectar con tu base de datos en Atlas Mongo DB:
 
 En el archivo /variables.env cambia user:password por tus propias credenciales de Atlas mongo DB.
 En el archivo /server.js descomenta las lineas -> //Connect to Atlas remote mongo database	
 
-### • Consulta para crear el documento publications en atlas desde localhost:4444/graphiql:
+### Probar apollo server (backend) en localhost con conexión remota a Atlas Mongo DB
+
+### • Consulta para crear el documento publications en atlas desde B1: http://localhost:4444/graphiql o B2: https://nombredetuapp.herokuapp.com/graphiql o B3: https://38r91.sse.codesandbox.io/
 
 mutation{
   addPublication(
@@ -58,7 +58,7 @@ mutation{
     }
 }
 
-### • Consulta para cargar las publicaciones desde atlas en el graphiql en localhost:4444/graphiql o https://nombredetuapp.herokuapp.com/graphiql o https://38r91.sse.codesandbox.io/
+### • Consulta para cargar las publicaciones desde atlas en el graphiql en B1: http://localhost:4444/graphiql o B2: https://nombredetuapp.herokuapp.com/graphiql o B3: https://38r91.sse.codesandbox.io/
 
 query{
   getAllPublications{
@@ -70,37 +70,64 @@ query{
 }
 
 ---------------
-### 1. Probar el frontend Vanilla (app.html) en local | apollo server en localhost (endpoint: http://localhost:4444/graphql) | BD en Atlas
+### B2 : Crea automáticamente un Backend Apollo Server para graphql (endpoint : https://nombredetuapp.herokuapp.com/graphiql) en heroku con conexión a Atlas Mongo Db:
 
-Puedes descargar el archivo app.html desde https://github.com/null-point-sys/express-apollo-graphql-app.html.git 
-y accederlo desde cualquier navegador en tu equipo o celular (no requiere instalación).
-
-El endpoint para hacer fetch desde vanilla es : http://localhost:4444/graphql
-
----------------
-### 2. Probar el frontend vanilla (app.html) en local | apollo server en heroku (endpoint: nombredetuapp.herokuapp.com/graphiql) | BD en Atlas
+En los archivos de tu instalación del servidor en localhost:
 
 • En el archivo /package.json ingresa tus propias versiones de node y npm que tienes corriendo en windows
   "engines": { "node": "v8.9.4","engines": { "npm": "v6.0.1" },
   
 • En Heroku > settings > Config Vars y agrega las dos variables que tienes en el archivo variables.env
 
-• En el archivo del front vanilla script.js > line 45 > fetch(`https://nombredetuapp.herokuapp.com/graphiql`, options)
+• Sigue el proceso de deploy indicado por tu app heroku para setear el git en la carpeta del servidor local.
 
 • http://zen-it.herokuapp.com/graphiql -> aqui puedes ver un ejemplo de como queda el backend.
 
 ---------------
-### 3. Probar el frontend vanilla (app.html) en local | apollo server en codesanbox (endpoint: 38r91.sse.codesandbox.io/) | BD en codesandbox:
+### B2 : Crea automáticamente un Backend Apollo Server para graphql (endpoint : https:38r91.sse.codesandbox.io/)en codesandbox con conexión a Atlas Mongo Db:
 
-Puedes descargar el archivo app.html desde https://github.com/null-point-sys/express-apollo-graphql-app.html.git  y ejecutarlo desde cualquier navegador, no requiere instalaciones de paquetes desde npm ni instalar nodejs y en la consola del navegador obtendras los datos almacenados en un json en codesandbox. 
+En los archivos de tu instalación del servidor en localhost:
 
-En script.js linea 63 cambia el endpoint del fetch hacia el apollo server: https://38r91.sse.codesandbox.io/:
+• En el archivo /package.json ingresa tus propias versiones de node y npm que tienes corriendo en windows
+  "engines": { "node": "v8.9.4","engines": { "npm": "v6.0.1" },
+  
+• En Heroku > settings > Config Vars y agrega las dos variables que tienes en el archivo variables.env
+
+• http://zen-it.herokuapp.com/graphiql -> aqui puedes ver un ejemplo de como queda el backend.
+
+
+---------------
+
+### A1. Probar el frontend Vanilla (app.html) en local | apollo server en localhost (endpoint: http://localhost:4444/graphql) | BD en Atlas
+
+• Puedes descargar el archivo app.html desde https://github.com/null-point-sys/express-apollo-graphql-app.html.git 
+y accederlo desde cualquier navegador en tu equipo o celular (no requiere instalación con npm por consola ya que no depende de nodejs).
+
+• El endpoint para hacer fetch desde vanilla es el que tiene el archivo por defecto: http://localhost:4444/graphql
+
+---------------
+### A2: Probar el frontend vanilla (app.html) en local | apollo server en heroku (endpoint: https://nombredetuapp.herokuapp.com/graphiql) | BD en Atlas
+
+• Puedes descargar el archivo app.html desde https://github.com/null-point-sys/express-apollo-graphql-app.html.git 
+y accederlo desde cualquier navegador en tu equipo o celular (no requiere instalación con npm por consola ya que no depende de nodejs).
+
+• En la línea 45 cambiamos el endpoint > fetch(`https://nombredetuapp.herokuapp.com/graphiql`, options)
+
+• http://zen-it.herokuapp.com/graphiql -> aqui puedes ver un ejemplo de como queda el backend.
+
+---------------
+### A3. Probar el frontend vanilla (app.html) en local | apollo server en codesanbox (endpoint: https://38r91.sse.codesandbox.io/) | BD en codesandbox:
+
+• Puedes descargar el archivo app.html desde https://github.com/null-point-sys/express-apollo-graphql-app.html.git 
+y accederlo desde cualquier navegador en tu equipo o celular (no requiere instalación con npm por consola ya que no depende de nodejs).
+
+• En la línea 45 cambiamos el endpoint > fetch(`https://38r91.sse.codesandbox.io/`, options)
 
   fetch(`https://38r91.sse.codesandbox.io/`, options)
 			.then(res => res.json())
 			.then(renderPublications);
 			
-y en la línea 17 cambia el query:
+• y en la línea 17 cambia el query ya que las vamos a cargar desde el mismo codesandbox:
 
   const getpublicationsQuery = () => `{ teams {
       id
@@ -111,22 +138,40 @@ y en la línea 17 cambia el query:
     } }`;
 
 ---------------
-### 4. Probar el frontend vanilla (app.html) en heroku | apollo server en heroku | BD en Atlas:
+### A4. Probar el frontend vanilla (app.html) en heroku | apollo server en heroku | BD en Atlas:
+
+• Puedes descargar el archivo app.html desde https://github.com/null-point-sys/express-apollo-graphql-app.html.git 
+y accederlo desde cualquier navegador en tu equipo o celular (no requiere instalación con npm por consola ya que no depende de nodejs).
 
 ---------------
-### 5. Probar el frontend vanilla (app.html) en heroku | apollo server en codesandbox | BD en codesandbox:
+### 5. Probar el frontend vanilla (app.html) en heroku | apollo server en codesandbox (endpoint: 38r91.sse.codesandbox.io/) | BD en codesandbox:
+
+• Puedes descargar el archivo app.html desde https://github.com/null-point-sys/express-apollo-graphql-app.html.git 
+y accederlo desde cualquier navegador en tu equipo o celular (no requiere instalación con npm por consola ya que no depende de nodejs).
 
 ---------------
-### 6. Probar el frontend vanilla (app.html) en codesandbox | apollo server en heroku | BD en Atlas:
+### 6. Probar el frontend vanilla (app.html) en codesandbox | apollo server en heroku (endpoint https://nombredetuapp.herokuapp.com/graphiql) | BD en Atlas:
+
+• Puedes descargar el archivo app.html desde https://github.com/null-point-sys/express-apollo-graphql-app.html.git 
+y accederlo desde cualquier navegador en tu equipo o celular (no requiere instalación con npm por consola ya que no depende de nodejs).
 
 ---------------
-### 7. Probar el frontend vanilla (app.html) en codesandbox | apollo server en codesandbox | BD en codesandbox:
+### 7. Probar el frontend vanilla (app.html) en codesandbox | apollo server en codesandbox (endpoint: 38r91.sse.codesandbox.io/) | BD en codesandbox:
+
+• Puedes descargar el archivo app.html desde https://github.com/null-point-sys/express-apollo-graphql-app.html.git 
+y accederlo desde cualquier navegador en tu equipo o celular (no requiere instalación con npm por consola ya que no depende de nodejs).
 
 ---------------
-### 8. Probar el frontend vanilla (app.html) en hosting | apollo server en heroku | BD en Atlas:
+### 8. Probar el frontend vanilla (app.html) en hosting | apollo server en heroku (endpoint https://nombredetuapp.herokuapp.com/graphiql) | BD en Atlas:
+
+• Puedes descargar el archivo app.html desde https://github.com/null-point-sys/express-apollo-graphql-app.html.git 
+y accederlo desde cualquier navegador en tu equipo o celular (no requiere instalación con npm por consola ya que no depende de nodejs).
 
 ---------------
-### 9. Probar el frontend vanilla (app.html) en hosting | apollo server en codesandbox | BD en codesandbox:
+### 9. Probar el frontend vanilla (app.html) en hosting | apollo server en codesandbox (endpoint: 38r91.sse.codesandbox.io/) | BD en codesandbox:
+
+• Puedes descargar el archivo app.html desde https://github.com/null-point-sys/express-apollo-graphql-app.html.git 
+y accederlo desde cualquier navegador en tu equipo o celular (no requiere instalación con npm por consola ya que no depende de nodejs).
 
 ----------------
 ### Opcional instalar una aplicación frontend react para el proyecto :
