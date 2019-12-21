@@ -36,7 +36,7 @@ Abre una consola de windows y pega todo el script anterior y dale enter.
 Una vez git clona este primer repositorio https://github.com/null-point-sys/express-apollo-graphql-starter.git en la ruta C:\express-apollo-graphql-starter el bash script ingresa a esta carpeta y clona seguidamente el repositorio https://github.com/null-point-sys/express-apollo-graphql-starter2.git que contiene solo un archivo el server.js apollo express del proyecto y a continuación npm instala las dependencias desde package.json e instala en paralelo node js (node_modules), al finalizar se inicializa el proyecto con npm run server: el BACK graphiql queda corriendo en el navegador en localhost:4444/graphiql y el FRONT en vanilla javascript queda corriendo con localhost:4444
 
 ---------------
-### Para probar desde esta instalación en localhost con conexión remota a Atlas Mongo DB
+### Probar apollo server (backend) en localhost con conexión remota a Atlas Mongo DB
 
 ### • Para conectar con tu base de datos en Atlas Mongo DB:
 
@@ -70,15 +70,15 @@ query{
   	likes
 	}
 }
-
-### • Para probar el front end Vanilla, apollo server en localhost y cargar datos desde Atlas MongoDB:
+---------------
+### • Probar el frontend Vanilla (app.html) apollo server en localhost y cargar datos desde Atlas MongoDB:
 
 Puedes descargar el archivo app.html desde https://github.com/null-point-sys/express-apollo-graphql-app.html.git 
 y accederlo desde cualquier navegador en tu equipo o celular (no requiere instalación).
 
 El endpoint para hacer fetch desde vanilla es : http://localhost:4444/graphql
-
-### • Para probar el front vanilla, apollo server en codesanbox y cargar datos desde alli mismo:
+---------------
+### • Probar el frontend vanilla (app.html) apollo server en codesanbox y cargar datos desde alli mismo:
 
 Puedes descargar el archivo app.html desde https://github.com/null-point-sys/express-apollo-graphql-app.html.git  y ejecutarlo desde cualquier navegador, no requiere instalaciones de paquetes desde npm ni instalar nodejs y en la consola del navegador obtendras los datos almacenados en un json en codesandbox. 
 
