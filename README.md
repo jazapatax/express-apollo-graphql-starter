@@ -1,5 +1,5 @@
 
-<img src="https://user-images.githubusercontent.com/25323947/71303686-1e5b9980-238a-11ea-91b3-06939c318a06.png" width="90%"></img> 
+<img src="https://user-images.githubusercontent.com/25323947/71304108-f838f800-238f-11ea-9b3f-995b4ae58faf.png" width="15%"></img> 
 
 image uploaded with : https://felixhayashi.github.io/ReadmeGalleryCreatorForGitHub/
 
