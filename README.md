@@ -91,7 +91,7 @@ localhost:4444
 ---------------
 ### • Para probar el front vanilla desacoplado con un servidor apollo (standalone) en codesanbox:
 
-Puedes descargar el archivo index.html y script.js y ejecutarlo desde cualquier navegador, no requiere instalaciones de paquetes desde npm ni instalar nodejs y en la consola del navegador obtendras los datos almacenados en el servidor. 
+Puedes descargar el archivo app.html de  y ejecutarlo desde cualquier navegador, no requiere instalaciones de paquetes desde npm ni instalar nodejs y en la consola del navegador obtendras los datos almacenados en el servidor. 
 
 En script.js linea 63 cambia el fetch hacia el apollo server: https://38r91.sse.codesandbox.io/:
 
