@@ -2,7 +2,7 @@
 
 image uploaded with : https://felixhayashi.github.io/ReadmeGalleryCreatorForGitHub/
 
-## Crea automáticamente un Backend Apollo Server para graphql con conexión a Atlas Mongo Db: 
+## Crea automáticamente un Backend Apollo Server para graphql en localhost con conexión a Atlas Mongo Db: 
 
 Este repositorio (https://github.com/null-point-sys/express-apollo-graphql-starter.git) contiene: 
 
@@ -58,7 +58,7 @@ mutation{
     }
 }
 
-### • Consulta para cargar las publicaciones desde atlas en localhost:4444/graphiql:
+### • Consulta para cargar las publicaciones desde atlas en el graphiql en localhost:4444/graphiql o https://nombredetuapp.herokuapp.com/graphiql o https://38r91.sse.codesandbox.io/
 
 query{
   getAllPublications{
@@ -78,16 +78,16 @@ y accederlo desde cualquier navegador en tu equipo o celular (no requiere instal
 El endpoint para hacer fetch desde vanilla es : http://localhost:4444/graphql
 
 ---------------
-### 2. Probar el frontend vanilla (app.html) en local | apollo server en heroku (endpoint: appapollo.herokuapp.com/graphiql) | BD en Atlas
+### 2. Probar el frontend vanilla (app.html) en local | apollo server en heroku (endpoint: nombredetuapp.herokuapp.com/graphiql) | BD en Atlas
 
 • En el archivo /package.json ingresa tus propias versiones de node y npm que tienes corriendo en windows
   "engines": { "node": "v8.9.4","engines": { "npm": "v6.0.1" },
   
 • En Heroku > settings > Config Vars y agrega las dos variables que tienes en el archivo variables.env
 
-• En el archivo del front vanilla script.js > line 45 > fetch(`https://name-of-my-app.herokuapp.com/graphql`, options)
+• En el archivo del front vanilla script.js > line 45 > fetch(`https://nombredetuapp.herokuapp.com/graphiql`, options)
 
-   ingresa la url de tu app heroku.
+• http://zen-it.herokuapp.com/graphiql -> aqui puedes ver un ejemplo de como queda el backend.
 
 ---------------
 ### 3. Probar el frontend vanilla (app.html) en local | apollo server en codesanbox (endpoint: 38r91.sse.codesandbox.io/) | BD en codesandbox:
