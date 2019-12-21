@@ -70,15 +70,17 @@ query{
   	likes
 	}
 }
+
 ---------------
-### • Probar el frontend Vanilla (app.html) apollo server en localhost y cargar datos desde Atlas MongoDB:
+### Probar el frontend Vanilla (app.html) apollo server en localhost y cargar datos desde Atlas MongoDB:
 
 Puedes descargar el archivo app.html desde https://github.com/null-point-sys/express-apollo-graphql-app.html.git 
 y accederlo desde cualquier navegador en tu equipo o celular (no requiere instalación).
 
 El endpoint para hacer fetch desde vanilla es : http://localhost:4444/graphql
+
 ---------------
-### • Probar el frontend vanilla (app.html) apollo server en codesanbox y cargar datos desde alli mismo:
+### Probar el frontend vanilla (app.html) apollo server en codesanbox y cargar datos desde alli mismo:
 
 Puedes descargar el archivo app.html desde https://github.com/null-point-sys/express-apollo-graphql-app.html.git  y ejecutarlo desde cualquier navegador, no requiere instalaciones de paquetes desde npm ni instalar nodejs y en la consola del navegador obtendras los datos almacenados en un json en codesandbox. 
 
@@ -99,7 +101,7 @@ y en la línea 17 cambia el query:
     } }`;
 
 ---------------
-### • Deploy a heroku para probar desde una dirección url en una instalación en un servidor web:
+### Deploy a heroku para probar desde una dirección url en una instalación en un servidor web:
 
 1. En el archivo /package.json ingresa tus propias versiones de node y npm que tienes corriendo en windows
   "engines": { "node": "v8.9.4" },
@@ -110,12 +112,9 @@ y en la línea 17 cambia el query:
 3. En el archivo del front vanilla script.js > line 45 > fetch(`https://name-of-my-app.herokuapp.com/graphql`, options)
 
    ingresa la url de tu app heroku.
-   
----------------
-
 
 ----------------
-### • Opcional instalar una aplicación frontend react para el proyecto :
+### Opcional instalar una aplicación frontend react para el proyecto :
 
 && npm install -g create-react-app 
 && npx create-react-app client
