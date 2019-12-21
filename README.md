@@ -113,9 +113,22 @@ y en la línea 17 cambia el query:
     } }`;
 
 ---------------
-### Deploy a heroku para probar desde una dirección url en una instalación en un servidor web:
+### 4. Probar el frontend vanilla (app.html) en heroku | apollo server en heroku | BD en Atlas:
 
+---------------
+### 5. Probar el frontend vanilla (app.html) en heroku | apollo server en codesandbox | BD en codesandbox:
 
+---------------
+### 6. Probar el frontend vanilla (app.html) en codesandbox | apollo server en heroku | BD en Atlas:
+
+---------------
+### 7. Probar el frontend vanilla (app.html) en codesandbox | apollo server en codesandbox | BD en codesandbox:
+
+---------------
+### 8. Probar el frontend vanilla (app.html) en hosting | apollo server en heroku | BD en Atlas:
+
+---------------
+### 9. Probar el frontend vanilla (app.html) en hosting | apollo server en codesandbox | BD en codesandbox:
 
 ----------------
 ### Opcional instalar una aplicación frontend react para el proyecto :
