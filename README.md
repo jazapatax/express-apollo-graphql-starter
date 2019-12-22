@@ -1,16 +1,24 @@
-## Crea una aplicación con Frontend (A), backend(B) y Base de datos (C) desacoplados entre si, es decir cada uno en su propia infraestructura:
+## Crea una aplicación con Frontend (A), backend (B) y Base de datos (C) desacoplados entre si, es decir cada uno en su propia infraestructura:
 
 Combinaciones posibles:
 
-A1 : Frontend en local | B1 : Backend en localhost | C : BD en ATlas Mongo DB
-A2 : Frontend en Local   | B2 : Backend en heroku | C : BD en ATlas Mongo DB
-A3 : Frontend en Local | B3 : Backend en codesandbox | C : BD en ATlas Mongo DB
-A4 : Frontend en Heroku | B2 : Backend en heroku | C : BD en ATlas Mongo DB
-A5 : Frontend en Heroku | B3 : Backend en codesandbox | C : BD en ATlas Mongo DB
-A6 : Frontend en codesandbox | B2 : Backend en heroku | C : BD en ATlas Mongo DB
-A7 : Frontend en codesandbox | B3 : Backend en codesandbox | C : BD en ATlas Mongo DB
-A8 : Frontend en hosting | B2 : Backend en heroku | C : BD en ATlas Mongo DB
-A9 : Frontend en hosting | B3 : Backend en codesandbox | C : BD en ATlas Mongo DB
+• A1 : Frontend en local | B1 : Backend en localhost | C : BD en ATlas Mongo DB
+
+• A2 : Frontend en Local | B2 : Backend en heroku | C : BD en ATlas Mongo DB
+
+• A3 : Frontend en Local | B3 : Backend en codesandbox | C : BD en ATlas Mongo DB
+
+• A4 : Frontend en Heroku | B2 : Backend en heroku | C : BD en ATlas Mongo DB
+
+• A5 : Frontend en Heroku | B3 : Backend en codesandbox | C : BD en ATlas Mongo DB
+
+• A6 : Frontend en codesandbox | B2 : Backend en heroku | C : BD en ATlas Mongo DB
+
+• A7 : Frontend en codesandbox | B3 : Backend en codesandbox | C : BD en ATlas Mongo DB
+
+• A8 : Frontend en hosting | B2 : Backend en heroku | C : BD en ATlas Mongo DB
+
+• A9 : Frontend en hosting | B3 : Backend en codesandbox | C : BD en ATlas Mongo DB
 
 <img src="https://user-images.githubusercontent.com/25323947/71314950-8b217300-2420-11ea-9308-82cf7c796705.png" width="100%"></img>  
 
