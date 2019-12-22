@@ -36,8 +36,8 @@ Una vez git clona este primer repositorio https://github.com/null-point-sys/expr
 ---------------
 ### C: Para conectar con tu base de datos en Atlas Mongo DB:
 
-En el archivo /variables.env cambia user:password por tus propias credenciales de Atlas mongo DB.
-En el archivo /server.js descomenta las lineas -> //Connect to Atlas remote mongo database	
+• En el archivo /variables.env cambia user:password por tus propias credenciales de Atlas mongo DB.
+• En el archivo /server.js descomenta las lineas -> //Connect to Atlas remote mongo database	
 
 ### Probar apollo server (backend) en localhost con conexión remota a Atlas Mongo DB
 
