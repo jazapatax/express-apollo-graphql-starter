@@ -94,10 +94,11 @@ En los archivos de tu instalación del servidor en localhost:
 
 • Click en import project
 
-• En la sección import from github 
+• En la sección import from github ingresa la url de este repositorio : https://github.com/null-point-sys/express-apollo-graphql-starter.git
 
+• Click en generate sandbox y listo! sigue los pasos para inicializar tu base de datos descomentando la inicialización en server.js y poniendo tus datos en el archivo variables.env 
 
-• http://zen-it.herokuapp.com/graphiql -> aqui puedes ver un ejemplo de como queda el backend.
+• https://ozt8r.sse.codesandbox.io/graphiql -> aqui puedes ver un ejemplo de como queda el backend en codesandbox
 
 
 ---------------
