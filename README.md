@@ -1,4 +1,4 @@
-## Crea una aplicación con Frontend (A), backend (B) y Base de datos (C) desacoplados entre si, es decir cada uno en su propia infraestructura:
+## Crea una aplicación con backend Apollo server (B) y Base de datos Mongo DB (C) desacoplados entre si, es decir cada uno en su propia infraestructura:
 
 Combinaciones posibles:
 
