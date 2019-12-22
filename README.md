@@ -2,23 +2,11 @@
 
 Combinaciones posibles:
 
-• A1 : Frontend en local | B1 : Backend en localhost | C : BD en Atlas Mongo DB
+B1 : Backend en localhost | C : BD en Atlas Mongo DB
 
-• A2 : Frontend en Local | B2 : Backend en heroku | C : BD en Atlas Mongo DB
+B2 : Backend en heroku | C : BD en Atlas Mongo DB
 
-• A3 : Frontend en Local | B3 : Backend en codesandbox | C : BD en Atlas Mongo DB
-
-• A4 : Frontend en Heroku | B2 : Backend en heroku | C : BD en Atlas Mongo DB
-
-• A5 : Frontend en Heroku | B3 : Backend en codesandbox | C : BD en Atlas Mongo DB
-
-• A6 : Frontend en codesandbox | B2 : Backend en heroku | C : BD en Atlas Mongo DB
-
-• A7 : Frontend en codesandbox | B3 : Backend en codesandbox | C : BD en Atlas Mongo DB
-
-• A8 : Frontend en hosting | B2 : Backend en heroku | C : BD en Atlas Mongo DB
-
-• A9 : Frontend en hosting | B3 : Backend en codesandbox | C : BD en Atlas Mongo DB
+B3 : Backend en codesandbox | C : BD en Atlas Mongo DB
 
 <img src="https://user-images.githubusercontent.com/25323947/71314950-8b217300-2420-11ea-9308-82cf7c796705.png" width="100%"></img>  
 
@@ -121,90 +109,6 @@ En los archivos de tu instalación del servidor en localhost:
 • Click en generate sandbox y listo! sigue los pasos para inicializar tu base de datos descomentando la inicialización en server.js y poniendo tus datos en el archivo variables.env 
 
 • https://ozt8r.sse.codesandbox.io/graphiql -> aqui puedes ver un ejemplo de como queda el backend en codesandbox
-
-
----------------
-
-### A1. Probar el frontend Vanilla (app.html) en local | apollo server en localhost (endpoint: http://localhost:4444/graphiql) | BD en Atlas
-
-• Puedes descargar el archivo app.html desde https://github.com/null-point-sys/express-apollo-graphql-app.html.git 
-y accederlo desde cualquier navegador en tu equipo o celular (no requiere instalación con npm por consola ya que no depende de nodejs).
-
-• El endpoint para hacer fetch desde vanilla es el que tiene el archivo por defecto: http://localhost:4444/graphiql
-
----------------
-### A2: Probar el frontend vanilla (app.html) en local | apollo server en heroku (endpoint: https://nombredetuapp.herokuapp.com/graphiql) | BD en Atlas
-
-• Puedes descargar el archivo app.html desde https://github.com/null-point-sys/express-apollo-graphql-app.html.git 
-y accederlo desde cualquier navegador en tu equipo o celular (no requiere instalación con npm por consola ya que no depende de nodejs).
-
-• En la línea 45 cambiamos el endpoint > fetch(`https://nombredetuapp.herokuapp.com/graphiql`, options)
-
-• http://zen-it.herokuapp.com/graphiql -> aqui puedes ver un ejemplo de como queda el backend.
-
----------------
-### A3. Probar el frontend vanilla (app.html) en local | apollo server en codesanbox (endpoint: https://38r91.sse.codesandbox.io/graphiql) | BD en codesandbox:
-
-• Puedes descargar el archivo app.html desde https://github.com/null-point-sys/express-apollo-graphql-app.html.git 
-y accederlo desde cualquier navegador en tu equipo o celular (no requiere instalación con npm por consola ya que no depende de nodejs).
-
-• En la línea 45 cambiamos el endpoint > fetch(`https://38r91.sse.codesandbox.io/`, options)
-
-  fetch(`https://38r91.sse.codesandbox.io/`, options)
-			.then(res => res.json())
-			.then(renderPublications);
-			
-• y en la línea 17 cambia el query ya que las vamos a cargar desde el mismo codesandbox:
-
-  const getpublicationsQuery = () => `{ teams {
-      id
-      institution
-      nickname
-      color
-      favorite
-    } }`;
-
----------------
-### A4. Probar el frontend vanilla (app.html) en heroku | apollo server en heroku (endpoint https://nombredetuapp.herokuapp.com/graphiql) | BD en Atlas:
-
-• Sube el archivo app.html (https://github.com/null-point-sys/express-apollo-graphql-app.html.git) a una aplicaciómn heroku
-y accedelo desde cualquier navegador en tu equipo o celular (no requiere instalación con npm por consola ya que no depende de nodejs).
-
-https://nombredetuapp.herokuapp.com/app.html
-
----------------
-### A5. Probar el frontend vanilla (app.html) en heroku | apollo server en codesandbox (endpoint: https://38r91.sse.codesandbox.io/graphiql) | BD en codesandbox:
-
-Sube el archivo app.html (https://github.com/null-point-sys/express-apollo-graphql-app.html.git) a una aplicaciómn heroku
-y accedelo desde cualquier navegador en tu equipo o celular (no requiere instalación con npm por consola ya que no depende de nodejs):
-
-https://nombredetuapp.herokuapp.com/app.html
-
----------------
-### A6. Probar el frontend vanilla (app.html) en codesandbox | apollo server en heroku (endpoint https://nombredetuapp.herokuapp.com/graphiql) | BD en Atlas:
-
-Sube el archivo app.html (https://github.com/null-point-sys/express-apollo-graphql-app.html.git) a un codesandbox
-y accedelo desde cualquier navegador en tu equipo o celular (no requiere instalación con npm por consola ya que no depende de nodejs).
-
----------------
-### A7. Probar el frontend vanilla (app.html) en codesandbox | apollo server en codesandbox (endpoint: https://38r91.sse.codesandbox.io/graphiql) | BD en codesandbox:
-
-Sube el archivo app.html (https://github.com/null-point-sys/express-apollo-graphql-app.html.git) a un codesandbox 
-y accedelo desde cualquier navegador en tu equipo o celular (no requiere instalación con npm por consola ya que no depende de nodejs).
-
----------------
-### A8. Probar el frontend vanilla (app.html) en hosting | apollo server en heroku (endpoint https://nombredetuapp.herokuapp.com/graphiql) | BD en Atlas:
-
-Sube el archivo app.html (https://github.com/null-point-sys/express-apollo-graphql-app.html.git) a un hosting con filezilla o cualquier ftp y accedelo desde cualquier navegador en tu equipo o celular (no requiere instalación con npm por consola ya que no depende de nodejs).
-
-https://www.midominio.com/app.html
-
----------------
-### A9. Probar el frontend vanilla (app.html) en hosting | apollo server en codesandbox (endpoint: https://38r91.sse.codesandbox.io/graphiql) | BD en codesandbox:
-
-Sube el archivo app.html (https://github.com/null-point-sys/express-apollo-graphql-app.html.git) a un hosting con filezilla o cualquier ftp y accedelo desde cualquier navegador en tu equipo o celular (no requiere instalación con npm por consola ya que no depende de nodejs).
-
-https://www.midominio.com/app.html
 
 ----------------
 ### Opcional instalar una aplicación frontend react para el proyecto :
