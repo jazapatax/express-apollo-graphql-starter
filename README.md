@@ -165,7 +165,7 @@ y accederlo desde cualquier navegador en tu equipo o celular (no requiere instal
     } }`;
 
 ---------------
-### A4. Probar el frontend vanilla (app.html) en heroku | apollo server en heroku | BD en Atlas:
+### A4. Probar el frontend vanilla (app.html) en heroku | apollo server en heroku (endpoint https://nombredetuapp.herokuapp.com/graphiql) | BD en Atlas:
 
 • Sube el archivo app.html (https://github.com/null-point-sys/express-apollo-graphql-app.html.git) a una aplicaciómn heroku
 y accedelo desde cualquier navegador en tu equipo o celular (no requiere instalación con npm por consola ya que no depende de nodejs).
