@@ -91,7 +91,7 @@ En los archivos de tu instalación del servidor en localhost:
 • http://zen-it.herokuapp.com/graphiql -> aqui puedes ver un ejemplo de como queda el backend.
 
 ---------------
-### B3 : Crea automáticamente un Backend Apollo Server para graphql (endpoint : https://38r91.sse.codesandbox.io/)en codesandbox con conexión a Atlas Mongo Db:
+### B3 : Crea automáticamente un Backend Apollo Server para graphql (endpoint : https://38r91.sse.codesandbox.io/) en codesandbox con conexión a Atlas Mongo Db:
 
 En los archivos de tu instalación del servidor en localhost:
 
