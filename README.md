@@ -42,7 +42,10 @@ Una vez git clona este primer repositorio https://github.com/null-point-sys/expr
 
 ### Probar apollo server (backend) en localhost con conexión remota a Atlas Mongo DB
 
-### • Consulta para crear el documento publications en atlas desde B1: http://localhost:4444/graphiql o B2: https://nombredetuapp.herokuapp.com/graphiql o B3: https://38r91.sse.codesandbox.io/
+### • Consulta para crear el documento publications en atlas desde 
+### B1: http://localhost:4444/graphiql o 
+### B2: https://nombredetuapp.herokuapp.com/graphiql o 
+### B3: https://38r91.sse.codesandbox.io/
 
 mutation{
   addPublication(
@@ -59,7 +62,10 @@ mutation{
     }
 }
 
-### • Consulta para cargar las publicaciones desde atlas en el graphiql en B1: http://localhost:4444/graphiql o B2: https://nombredetuapp.herokuapp.com/graphiql o B3: https://38r91.sse.codesandbox.io/
+### • Consulta para cargar las publicaciones desde atlas en el graphiql en 
+### B1: http://localhost:4444/graphiql o 
+### B2: https://nombredetuapp.herokuapp.com/graphiql o 
+### B3: https://38r91.sse.codesandbox.io/
 
 query{
   getAllPublications{
