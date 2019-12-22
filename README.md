@@ -8,7 +8,7 @@ B2 : Backend en heroku | C : BD en Atlas Mongo DB
 
 B3 : Backend en codesandbox | C : BD en Atlas Mongo DB
 
-<img src="https://user-images.githubusercontent.com/25323947/71314950-8b217300-2420-11ea-9308-82cf7c796705.png" width="100%"></img>  
+<img src="https://user-images.githubusercontent.com/25323947/71322289-fb1d1100-2493-11ea-8e04-21f02988a0cd.png" width="100%"></img>   
 
 image uploaded with : https://felixhayashi.github.io/ReadmeGalleryCreatorForGitHub/
 
