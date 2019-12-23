@@ -81,6 +81,16 @@ query{
 	}
 }
 
+### • Consulta para crear un nuevo usuario con la mutation signupUser 
+### B1: http://localhost:4444/graphiql o 
+### B2: https://nombredetuapp.herokuapp.com/graphiql o 
+### B3: https://38r91.sse.codesandbox.io/graphiql
+
+
+mutation{
+  signupUser(username:"aaa",email:"asd@asd.co",password:"123456"){token}
+}
+
 ---------------
 ### B2 : Crea automáticamente un Backend Apollo Server para graphql (endpoint : https://nombredetuapp.herokuapp.com/graphiql) en heroku con conexión a Atlas Mongo Db:
 
