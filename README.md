@@ -50,7 +50,7 @@ El puntero se para en C:\ con pushd C:\ luego git clona el repositorio https://g
 ### • Consulta para crear el documento publications en atlas desde 
 ### B1: http://localhost:4444/graphiql o 
 ### B2: https://nombredetuapp.herokuapp.com/graphiql o 
-### B3: https://38r91.sse.codesandbox.io/graphiql
+### B3: https://ozt8r.sse.codesandbox.io/graphiql
 
 mutation{
   addPublication(
@@ -70,7 +70,7 @@ mutation{
 ### • Consulta para cargar las publicaciones desde atlas en el graphiql en 
 ### B1: http://localhost:4444/graphiql o 
 ### B2: https://nombredetuapp.herokuapp.com/graphiql o 
-### B3: https://38r91.sse.codesandbox.io/graphiql
+### B3: https://ozt8r.sse.codesandbox.io/graphiql
 
 query{
   getAllPublications{
@@ -84,7 +84,7 @@ query{
 ### • Consulta para crear un nuevo usuario con la mutation signupUser 
 ### B1: http://localhost:4444/graphiql o 
 ### B2: https://nombredetuapp.herokuapp.com/graphiql o 
-### B3: https://38r91.sse.codesandbox.io/graphiql
+### B3: https://ozt8r.sse.codesandbox.io/graphiql
 
 
 mutation{
@@ -106,7 +106,7 @@ En los archivos de tu instalación del servidor en localhost:
 • http://zen-it.herokuapp.com/graphiql -> aqui puedes ver un ejemplo de como queda el backend.
 
 ---------------
-### B3 : Crea automáticamente un Backend Apollo Server para graphql (endpoint : https://38r91.sse.codesandbox.io/graphiql) en codesandbox con conexión a Atlas Mongo Db:
+### B3 : Crea automáticamente un Backend Apollo Server para graphql (endpoint : https://ozt8r.sse.codesandbox.io/graphiql) en codesandbox con conexión a Atlas Mongo Db:
 
 • Crea una cuenta gratuita en codesandbox
 
