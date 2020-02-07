@@ -21,7 +21,7 @@ Este repositorio (https://github.com/null-point-sys/express-apollo-graphql-start
 - Las variables de entorno (variables.env)
 
 ---------------
-## B1 : Crea automáticamente un Backend Apollo Server para graphql en localhost (endpoint : http://localhost:4444/graphiql) con conexión a Atlas Mongo Db:
+## (B1) : Crea automáticamente un Backend Apollo Server para graphql en localhost (endpoint : http://localhost:4444/graphiql) con conexión a Atlas Mongo Db:
 
 • Bash script automátizado para el sistema operativo windows:
 
@@ -40,14 +40,14 @@ Abre una consola de windows y pega todo el script anterior y dale enter.
 El puntero se para en C:\ con pushd C:\ luego git clona el repositorio https://github.com/null-point-sys/express-apollo-graphql-starter.git en la ruta C:\express-apollo-graphql-starter el bash script ingresa a esta carpeta y a continuación npm instala las dependencias desde package.json e instala en paralelo node js (node_modules), al finalizar se inicializa el proyecto con npm run server: el BACK graphiql queda corriendo en el navegador en http://localhost:4444/graphiql
 
 ---------------
-### C: Para conectar con tu base de datos en Atlas Mongo DB:
+### (C): Para conectar con tu base de datos en Atlas Mongo DB:
 
 • En el archivo /variables.env cambia user:password por tus propias credenciales de Atlas mongo DB.
 
 • En el archivo /server.js descomenta las lineas -> //Connect to Atlas remote mongo database	
 
 ---------------
-### B2 : Crea automáticamente un Backend Apollo Server para graphql (endpoint : https://nombredetuapp.herokuapp.com/graphiql) en heroku con conexión a Atlas Mongo Db:
+### (B2) : Crea automáticamente un Backend Apollo Server para graphql (endpoint : https://nombredetuapp.herokuapp.com/graphiql) en heroku con conexión a Atlas Mongo Db:
 
 En los archivos de tu instalación del servidor en localhost:
 
@@ -61,7 +61,7 @@ En los archivos de tu instalación del servidor en localhost:
 • http://zen-it.herokuapp.com/graphiql -> aqui puedes ver un ejemplo de como queda el backend.
 
 ---------------
-### B3 : Crea automáticamente un Backend Apollo Server para graphql (endpoint : https://ozt8r.sse.codesandbox.io/graphiql) en codesandbox con conexión a Atlas Mongo Db:
+### (B3) : Crea automáticamente un Backend Apollo Server para graphql (endpoint : https://ozt8r.sse.codesandbox.io/graphiql) en codesandbox con conexión a Atlas Mongo Db:
 
 • Crea una cuenta gratuita en codesandbox
 
@@ -111,7 +111,7 @@ mutation{
 }
 
 ----------------
-### Opcional: instalar una aplicación FRONTEND react en (B1) -> directorio C:\express-apollo-graphql-starter 
+### (A): instalar una aplicación FRONTEND REACT nombrada client en (B1) directorio C:\express-apollo-graphql-starter 
 
 pushd C:\express-apollo-graphql-starter 
 && npm install create-react-app
@@ -123,12 +123,13 @@ pushd C:\express-apollo-graphql-starter
 && cd C:\express-apollo-graphql-starter\client\src\queries
 && type nul > index.js
 
-Clean up:
+----------------
+### Clean up:
 
 1. en components/App.js:
 
 Borrar:
-[<header ... </header>]
+[<header> ... </header>]
 
 Borrar 
 [import logo from './logo.svg';]
