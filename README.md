@@ -113,6 +113,7 @@ mutation{
 ----------------
 ### Opcional: instalar una aplicación FRONTEND react en (B1) -> directorio C:\express-apollo-graphql-starter 
 
+pushd C:\ &&
 && npm install -g create-react-app 
 && npx create-react-app client
 && mkdir C:\express-apollo-graphql-starter\client\src\components
