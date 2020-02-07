@@ -23,7 +23,7 @@ Este repositorio (https://github.com/null-point-sys/express-apollo-graphql-start
 ---------------
 ## B1 : Crea automáticamente un Backend Apollo Server para graphql en localhost (endpoint : http://localhost:4444/graphiql) con conexión a Atlas Mongo Db:
 
-### • Bash script automátizado para el sistema operativo windows:
+• Bash script automátizado para el sistema operativo windows:
 
 pushd C:\ 
 && git clone https://github.com/null-point-sys/express-apollo-graphql-starter.git
@@ -31,13 +31,11 @@ pushd C:\
 && npm install
 && npm run server
 
----------------
-
-### • Como poner a correr este bash script automátizado en mi equipo:
+• Como poner a correr este bash script automátizado en mi equipo:
 
 Abre una consola de windows y pega todo el script anterior y dale enter.
 
-### • Explicación del flujo de este bash script automátizado para el sistema operativo windows:
+• Explicación del flujo de este bash script automátizado para el sistema operativo windows:
 
 El puntero se para en C:\ con pushd C:\ luego git clona el repositorio https://github.com/null-point-sys/express-apollo-graphql-starter.git en la ruta C:\express-apollo-graphql-starter el bash script ingresa a esta carpeta y a continuación npm instala las dependencias desde package.json e instala en paralelo node js (node_modules), al finalizar se inicializa el proyecto con npm run server: el BACK graphiql queda corriendo en el navegador en http://localhost:4444/graphiql
 
