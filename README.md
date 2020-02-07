@@ -123,7 +123,7 @@ pushd C:\express-apollo-graphql-starter
 && cd C:\express-apollo-graphql-starter\client\src\queries
 && type nul > index.js
 
-### Clean up:
+### (A1) Clean up:
 
 1. en components/App.js:
 
@@ -143,6 +143,8 @@ Borrar
 Una vez hecho el clean up > $ yarn start
 
 Frontend react client app > localhost:3000  
+
+### (A2) Agregar dependencias de client y Set Up Apollo Client / Apollo Provider
   
 En /server.js comentar app.use("/graphiql",...
 
