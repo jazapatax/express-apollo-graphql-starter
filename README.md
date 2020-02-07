@@ -45,8 +45,36 @@ El puntero se para en C:\ con pushd C:\ luego git clona el repositorio https://g
 
 • En el archivo /server.js descomenta las lineas -> //Connect to Atlas remote mongo database	
 
-### Probar apollo server (backend) en localhost con conexión remota a Atlas Mongo DB
+---------------
+### B2 : Crea automáticamente un Backend Apollo Server para graphql (endpoint : https://nombredetuapp.herokuapp.com/graphiql) en heroku con conexión a Atlas Mongo Db:
 
+En los archivos de tu instalación del servidor en localhost:
+
+• En el archivo /package.json ingresa tus propias versiones de node y npm que tienes corriendo en windows
+  "engines": { "node": "v8.9.4","engines": { "npm": "v6.0.1" },
+  
+• En Heroku > settings > Config Vars y agrega las dos variables que tienes en el archivo variables.env
+
+• Sigue el proceso de deploy indicado por tu app heroku para setear el git en la carpeta del servidor local.
+
+• http://zen-it.herokuapp.com/graphiql -> aqui puedes ver un ejemplo de como queda el backend.
+
+---------------
+### B3 : Crea automáticamente un Backend Apollo Server para graphql (endpoint : https://ozt8r.sse.codesandbox.io/graphiql) en codesandbox con conexión a Atlas Mongo Db:
+
+• Crea una cuenta gratuita en codesandbox
+
+• Ingrea a la opción create sandbox
+
+• Click en import project
+
+• En la sección import from github ingresa la url de este repositorio : https://github.com/null-point-sys/express-apollo-graphql-starter.git
+
+• Click en generate sandbox y listo! sigue los pasos para inicializar tu base de datos descomentando la inicialización en server.js y poniendo tus datos en el archivo variables.env 
+
+• https://ozt8r.sse.codesandbox.io/graphiql -> aqui puedes ver un ejemplo de como queda el backend en codesandbox
+
+---------------
 ### • Consulta para crear el documento publications en atlas desde 
 ### B1: http://localhost:4444/graphiql o 
 ### B2: https://nombredetuapp.herokuapp.com/graphiql o 
@@ -91,34 +119,6 @@ mutation{
   signupUser(username:"aaa",email:"asd@asd.co",password:"123456"){token}
 }
 
----------------
-### B2 : Crea automáticamente un Backend Apollo Server para graphql (endpoint : https://nombredetuapp.herokuapp.com/graphiql) en heroku con conexión a Atlas Mongo Db:
-
-En los archivos de tu instalación del servidor en localhost:
-
-• En el archivo /package.json ingresa tus propias versiones de node y npm que tienes corriendo en windows
-  "engines": { "node": "v8.9.4","engines": { "npm": "v6.0.1" },
-  
-• En Heroku > settings > Config Vars y agrega las dos variables que tienes en el archivo variables.env
-
-• Sigue el proceso de deploy indicado por tu app heroku para setear el git en la carpeta del servidor local.
-
-• http://zen-it.herokuapp.com/graphiql -> aqui puedes ver un ejemplo de como queda el backend.
-
----------------
-### B3 : Crea automáticamente un Backend Apollo Server para graphql (endpoint : https://ozt8r.sse.codesandbox.io/graphiql) en codesandbox con conexión a Atlas Mongo Db:
-
-• Crea una cuenta gratuita en codesandbox
-
-• Ingrea a la opción create sandbox
-
-• Click en import project
-
-• En la sección import from github ingresa la url de este repositorio : https://github.com/null-point-sys/express-apollo-graphql-starter.git
-
-• Click en generate sandbox y listo! sigue los pasos para inicializar tu base de datos descomentando la inicialización en server.js y poniendo tus datos en el archivo variables.env 
-
-• https://ozt8r.sse.codesandbox.io/graphiql -> aqui puedes ver un ejemplo de como queda el backend en codesandbox
 
 ----------------
 ### Opcional instalar una aplicación frontend react para el proyecto :
