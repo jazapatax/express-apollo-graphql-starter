@@ -76,10 +76,7 @@ En los archivos de tu instalación del servidor en localhost:
 • https://ozt8r.sse.codesandbox.io/graphiql -> aqui puedes ver un ejemplo de como queda el backend en codesandbox
 
 ---------------
-### • Consulta para crear el documento publications en atlas desde 
-### B1: http://localhost:4444/graphiql o 
-### B2: https://nombredetuapp.herokuapp.com/graphiql o 
-### B3: https://ozt8r.sse.codesandbox.io/graphiql
+### • Consulta para crear el documento publications en atlas (C) desde graphiql (B1, B2 o B3):
 
 mutation{
   addPublication(
@@ -96,10 +93,7 @@ mutation{
     }
 }
 
-### • Consulta para cargar las publicaciones desde atlas en el graphiql en 
-### B1: http://localhost:4444/graphiql o 
-### B2: https://nombredetuapp.herokuapp.com/graphiql o 
-### B3: https://ozt8r.sse.codesandbox.io/graphiql
+### • Consulta para cargar las publicaciones desde atlas (C) en el graphiql (B1, B2 o B3):
 
 query{
   getAllPublications{
@@ -110,16 +104,11 @@ query{
 	}
 }
 
-### • Consulta para crear un nuevo usuario con la mutation signupUser 
-### B1: http://localhost:4444/graphiql o 
-### B2: https://nombredetuapp.herokuapp.com/graphiql o 
-### B3: https://ozt8r.sse.codesandbox.io/graphiql
-
+### • Consulta para crear un nuevo usuario con la mutation signupUser en atlas (C) desde el graphiql (B1, B2 o B3):
 
 mutation{
   signupUser(username:"aaa",email:"asd@asd.co",password:"123456"){token}
 }
-
 
 ----------------
 ### Opcional instalar una aplicación frontend react para el proyecto :
