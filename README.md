@@ -140,7 +140,7 @@ Borrar
    Borrar: import * as serviceWorker from './serviceWorker';
    Cambiar: import App from './App'; por: import App from './components/App';
 
-$ npm run dev
+Una vez hecho el clean up > $ yarn start
 
 Frontend react client app > localhost:3000  
   
