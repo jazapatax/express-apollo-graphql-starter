@@ -12,8 +12,6 @@ B3 : Backend en codesandbox | C : BD en Atlas Mongo DB
 
 image uploaded with : https://felixhayashi.github.io/ReadmeGalleryCreatorForGitHub/
 
-## B1 : Crea automáticamente un Backend Apollo Server para graphql en localhost (endpoint : http://localhost:4444/graphiql) con conexión a Atlas Mongo Db: 
-
 Este repositorio (https://github.com/null-point-sys/express-apollo-graphql-starter.git) contiene: 
 
 - Las dependencias (package.json)
@@ -22,6 +20,9 @@ Este repositorio (https://github.com/null-point-sys/express-apollo-graphql-start
 - El esquema de datos (schema.js)
 - Las variables de entorno (variables.env)
 
+---------------
+## B1 : Crea automáticamente un Backend Apollo Server para graphql en localhost (endpoint : http://localhost:4444/graphiql) con conexión a Atlas Mongo Db:
+
 ### • Bash script automátizado para el sistema operativo windows:
 
 pushd C:\ 
@@ -29,6 +30,8 @@ pushd C:\
 && cd express-apollo-graphql-starter
 && npm install
 && npm run server
+
+---------------
 
 ### • Como poner a correr este bash script automátizado en mi equipo:
 
