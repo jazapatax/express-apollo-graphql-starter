@@ -115,7 +115,8 @@ mutation{
 
 pushd C:\express-apollo-graphql-starter 
 && npm install -g create-react-app 
-&& create-react-app client
+&& npm uninstall -g create-react-app
+&& yarn create create-react-app client
 && mkdir C:\express-apollo-graphql-starter\client\src\components
 && move C:\express-apollo-graphql-starter\client\src\App.js C:\express-apollo-graphql-starter\client\src\components
 && move C:\express-apollo-graphql-starter\client\src\App.css C:\express-apollo-graphql-starter\client\src\components
