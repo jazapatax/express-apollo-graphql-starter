@@ -122,8 +122,31 @@ pushd C:\express-apollo-graphql-starter
 && mkdir C:\express-apollo-graphql-starter\client\src\queries
 && cd C:\express-apollo-graphql-starter\client\src\queries
 && type nul > index.js
-&& npm run dev
-&& yarn start
+
+Clean up:
+
+• en components/App.js:
+
+Borrar:
+1.
+<header className="App-header">
+	<img src={logo} className="App-logo" alt="logo" />
+        <p> Edit <code>src/App.js</code> and save to reload. </p>
+        <a className="App-link"
+          href="https://reactjs.org"
+          target="_blank"
+          rel="noopener noreferrer">
+          Learn React
+        </a>
+</header>
+
+2. import logo from './logo.svg';
+3. client/src/logo.svg
+4. client/src/serviceWorker.js
+5. client/src/index.js  
+   Borrar: serviceWorker.unregister();
+   Borrar: import * as serviceWorker from './serviceWorker';
+   Cambiar: import App from './App'; por: import App from './components/App';
 
 Frontend react client app > localhost:3000  
   
