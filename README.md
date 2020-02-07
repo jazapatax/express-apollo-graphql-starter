@@ -123,13 +123,12 @@ pushd C:\express-apollo-graphql-starter
 && cd C:\express-apollo-graphql-starter\client\src\queries
 && type nul > index.js
 
-----------------
 ### Clean up:
 
 1. en components/App.js:
 
 Borrar:
-[<header> ... </header>]
+[ header ... header ]
 
 Borrar 
 [import logo from './logo.svg';]
