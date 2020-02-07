@@ -142,8 +142,8 @@ Borrar:
 Borrar 
 [import logo from './logo.svg';]
 
-2. Borrar client/src/logo.svg
-3. Borrar client/src/serviceWorker.js
+2. Borrar [client/src/logo.svg]
+3. Borrar [client/src/serviceWorker.js]
 4. En client/src/index.js  
    Borrar: serviceWorker.unregister();
    Borrar: import * as serviceWorker from './serviceWorker';
