@@ -125,10 +125,9 @@ pushd C:\express-apollo-graphql-starter
 
 Clean up:
 
-• en components/App.js:
+1. en components/App.js:
 
 Borrar:
-1.
 <header className="App-header">
 	<img src={logo} className="App-logo" alt="logo" />
         <p> Edit <code>src/App.js</code> and save to reload. </p>
@@ -140,13 +139,17 @@ Borrar:
         </a>
 </header>
 
-2. import logo from './logo.svg';
-3. client/src/logo.svg
-4. client/src/serviceWorker.js
-5. client/src/index.js  
+Borrar 
+[import logo from './logo.svg';]
+
+2. Borrar client/src/logo.svg
+3. Borrar client/src/serviceWorker.js
+4. En client/src/index.js  
    Borrar: serviceWorker.unregister();
    Borrar: import * as serviceWorker from './serviceWorker';
    Cambiar: import App from './App'; por: import App from './components/App';
+
+$ npm run dev
 
 Frontend react client app > localhost:3000  
   
