@@ -111,15 +111,15 @@ mutation{
 }
 
 ----------------
-### Opcional instalar una aplicación frontend react para el proyecto :
+### Opcional: instalar una aplicación FRONTEND react en (B1) -> directorio C:\express-apollo-graphql-starter 
 
 && npm install -g create-react-app 
 && npx create-react-app client
-&& mkdir D:\express-apollo-graphql-starter\client\src\components
-&& move D:\express-apo llo-graphql-starter\client\src\App.js D:\express-apollo-graphql-starter\client\src\components
-&& move D:\express-apollo-graphql-starter\client\src\App.css D:\express-apollo-graphql-starter\client\src\components
-&& mkdir D:\express-apollo-graphql-starter\client\src\queries
-&& cd D:\express-apollo-graphql-starter\client\src\queries
+&& mkdir C:\express-apollo-graphql-starter\client\src\components
+&& move C:\express-apollo-graphql-starter\client\src\App.js C:\express-apollo-graphql-starter\client\src\components
+&& move C:\express-apollo-graphql-starter\client\src\App.css C:\express-apollo-graphql-starter\client\src\components
+&& mkdir C:\express-apollo-graphql-starter\client\src\queries
+&& cd C:\express-apollo-graphql-starter\client\src\queries
 && type nul > index.js
 && npm run dev
 && yarn start
