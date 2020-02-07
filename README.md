@@ -128,7 +128,7 @@ Clean up:
 1. en components/App.js:
 
 Borrar:
-<header className="App-header">
+[<header className="App-header">
 	<img src={logo} className="App-logo" alt="logo" />
         <p> Edit <code>src/App.js</code> and save to reload. </p>
         <a className="App-link"
@@ -137,7 +137,7 @@ Borrar:
           rel="noopener noreferrer">
           Learn React
         </a>
-</header>
+</header>]
 
 Borrar 
 [import logo from './logo.svg';]
