@@ -161,7 +161,7 @@ const client = new ApolloClient({
    uri : 'http://localhost:4444/graphql'
 });
 
-envolvemos <App /> con <ApolloProvider client={client}> <App /> </ApolloProvider>
+envolvemos [<App />] con [<ApolloProvider client={client}> <App /> </ApolloProvider>]
 
   
 En /server.js comentar app.use("/graphiql",...
