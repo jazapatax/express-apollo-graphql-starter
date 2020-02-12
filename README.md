@@ -145,6 +145,24 @@ Una vez hecho el clean up > $ yarn start
 Frontend react client app > localhost:3000  
 
 ### (A2) Agregar dependencias de client y Set Up Apollo Client / Apollo Provider
+
+• Contexto: Consola
+
+pushd C:\express-apollo-graphql-starter
+&& npm install react-apollo apollo-boost jwt-decode
+&& npm run dev
+
+•Contexto: client/src/index.js
+
+import ApolloClient from 'apollo-boost';
+import {ApolloProvider} from 'react-apollo';
+
+const client = new ApolloClient({
+   uri : 'http://localhost:4444/graphql'
+});
+
+envolvemos <App /> con <ApolloProvider client={client}> <App /> </ApolloProvider>
+
   
 En /server.js comentar app.use("/graphiql",...
 
