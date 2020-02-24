@@ -1,7 +1,5 @@
 ## Crea una aplicación BACKEND Apollo server (B) y Base de datos Mongo DB (C) desacoplados entre si, es decir cada uno en su propia infraestructura:
 
-<iframe src="https://stackblitz.com/edit/angular?embed=1"></iframe>
-
 Combinaciones posibles:
 
 B1 : Backend en localhost | C : BD en Atlas Mongo DB
