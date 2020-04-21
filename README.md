@@ -73,7 +73,7 @@ En los archivos de tu instalación del servidor en localhost:
 
 • Click en generate sandbox y listo! sigue los pasos para inicializar tu base de datos descomentando la inicialización en server.js y poniendo tus datos en el archivo variables.env 
 
-• https://ozt8r.sse.codesandbox.io/graphiql -> aqui puedes ver un ejemplo de como queda el backend en codesandbox
+• https://hv033.sse.codesandbox.io/graphiql -> aqui puedes ver un ejemplo de como queda el backend en codesandbox
 
 ---------------
 ### • Consulta para crear el documento publications en atlas (C) desde graphiql (B1, B2 o B3):
