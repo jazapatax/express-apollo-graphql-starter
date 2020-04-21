@@ -8,7 +8,7 @@ B2 : Backend en heroku
 
 B3 : Backend en codesandbox
 
-<img src="https://user-images.githubusercontent.com/25323947/71322289-fb1d1100-2493-11ea-8e04-21f02988a0cd.png" width="100%"></img>   
+
 
 image uploaded with : https://felixhayashi.github.io/ReadmeGalleryCreatorForGitHub/
 
