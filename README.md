@@ -1,12 +1,12 @@
-## Crea una aplicación BACKEND Apollo server (B) y Base de datos Mongo DB (C) desacoplados entre si, es decir cada uno en su propia infraestructura:
+## Crea una aplicación FRONTEND vanilla (A) BACKEND Apollo server (B) y BD Mongo (C) desacoplados entre si, es decir cada uno en su propia infraestructura:
 
 Combinaciones posibles:
 
-B1 : Backend en localhost | C : BD en Atlas Mongo DB
+B1 : Backend en localhost
 
-B2 : Backend en heroku | C : BD en Atlas Mongo DB
+B2 : Backend en heroku
 
-B3 : Backend en codesandbox | C : BD en Atlas Mongo DB
+B3 : Backend en codesandbox
 
 <img src="https://user-images.githubusercontent.com/25323947/71322289-fb1d1100-2493-11ea-8e04-21f02988a0cd.png" width="100%"></img>   
 
