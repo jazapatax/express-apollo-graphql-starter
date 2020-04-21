@@ -1,4 +1,4 @@
-## Crea una aplicación FRONTEND vanilla (A) BACKEND Apollo server (B) y BD Mongo (C) desacoplados entre si, es decir cada uno en su propia infraestructura:
+## Crea una aplicación FRONTEND vanilla (A) BACKEND Apollo server (B) y BD Mongo (C) desacoplados entre si (cada uno en su propia infraestructura independiente) para una arquitectura de microservicios
 
 <img src="https://user-images.githubusercontent.com/25323947/79919975-f3935780-83f4-11ea-9a63-f2e63bc0b7e9.png">
 
