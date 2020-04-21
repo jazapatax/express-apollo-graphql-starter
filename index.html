@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <title>Vanilla GraphQL</title>
+  </head>
+  <body>
+    <form id="publication-search">
+      <input
+        type="text"
+        id="search"
+        name="search"
+        placeholder="Search..."
+        autocomplete="off"
+      />
+      <button type="submit">Enter</button>
+    </form>
+    <div id="publication-container"></div>
+    <script>
+      const publicationsContainer = document.querySelector(
+        "#publication-container"
+      );
+      const form = document.querySelector("#publication-search");
+      const getpublicationsQuery = () =>
+        `{ getAllPublications{ _id name category likes }  }`;
+
+      /*
+       Query para graphiql directamente en : 
+      query{ getAllPublications{ _id name category likes } }
+       */
+
+      const renderPublications = ({ data }) => {
+        console.log(data);
+        const { getAllPublications = [] } = data;
+        while (publicationsContainer.firstChild) {
+          publicationsContainer.removeChild(publicationsContainer.firstChild);
+        }
+        const publicationsFragment = document.createDocumentFragment();
+        const publicationsList = document.createElement("ul");
+        getAllPublications.forEach(publication => {
+          const publicationsListItem = document.createElement("li");
+          const publicationsListLink = document.createElement("a");
+          publicationsListLink.href = publication.url;
+          publicationsListLink.textContent = "Click To View";
+          publicationsListItem.textContent = `${publication.name} - ${
+            publication.category
+          }`;
+          publicationsListItem.appendChild(publicationsListLink);
+          publicationsList.appendChild(publicationsListItem);
+        });
+        publicationsFragment.appendChild(publicationsList);
+        publicationsContainer.appendChild(publicationsFragment);
+      };
+      const loadPublications = ev => {
+        ev.preventDefault();
+        const keyword = form.elements["search"].value;
+        const options = {
+          method: "post",
+          headers: {
+            "Content-Type": "application/json"
+          },
+          body: JSON.stringify({
+            query: getpublicationsQuery(keyword)
+          })
+        };
+        fetch(`https://hv033.sse.codesandbox.io/graphql`, options)
+          .then(res => res.json())
+          .then(renderPublications);
+        form.reset();
+      };
+      form.addEventListener("submit", loadPublications);
+    </script>
+  </body>
+</html>
