@@ -46,8 +46,6 @@ El puntero se para en C:\ con pushd C:\ luego git clona el repositorio https://g
 
 • En el archivo /variables.env cambia user:password por tus propias credenciales de Atlas mongo DB.
 
-• En el archivo /server.js descomenta las lineas -> //Connect to Atlas remote mongo database	
-
 ---------------
 ### (B2) : Crea automáticamente un Backend Apollo Server para graphql (endpoint : https://nombredetuapp.herokuapp.com/graphiql) en heroku con conexión a Atlas Mongo Db:
 
