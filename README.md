@@ -1,5 +1,7 @@
 ## Crea una aplicación FRONTEND vanilla (A) BACKEND Apollo server (B) y BD Mongo (C) desacoplados entre si, es decir cada uno en su propia infraestructura:
 
+<img src="https://user-images.githubusercontent.com/25323947/79919684-7cf65a00-83f4-11ea-907c-15fd47b3ebc5.png">
+
 Combinaciones posibles:
 
 B1 : Backend en localhost
