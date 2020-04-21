@@ -47,7 +47,7 @@ El puntero se para en C:\ con pushd C:\ luego git clona el repositorio https://g
 • En el archivo /variables.env cambia user:password por tus propias credenciales de Atlas mongo DB.
 
 ---------------
-### (B2) : Crea automáticamente un Backend Apollo Server para graphql (endpoint : https://nombredetuapp.herokuapp.com/graphiql) en heroku con conexión a Atlas Mongo Db:
+### (B2) : Crea automáticamente un Backend Apollo Server para graphql (endpoint : http://zen-it.herokuapp.com/graphiql) en heroku con conexión a Atlas Mongo Db:
 
 En los archivos de tu instalación del servidor en localhost:
 
@@ -61,7 +61,7 @@ En los archivos de tu instalación del servidor en localhost:
 • http://zen-it.herokuapp.com/graphiql -> aqui puedes ver un ejemplo de como queda el backend.
 
 ---------------
-### (B3) : Crea automáticamente un Backend Apollo Server para graphql (endpoint : https://ozt8r.sse.codesandbox.io/graphiql) en codesandbox con conexión a Atlas Mongo Db:
+### (B3) : Crea automáticamente un Backend Apollo Server para graphql (endpoint : https://hv033.sse.codesandbox.io/graphiql) en codesandbox con conexión a Atlas Mongo Db:
 
 • Crea una cuenta gratuita en codesandbox
 
@@ -73,7 +73,9 @@ En los archivos de tu instalación del servidor en localhost:
 
 • Click en generate sandbox y listo! sigue los pasos para inicializar tu base de datos descomentando la inicialización en server.js y poniendo tus datos en el archivo variables.env 
 
-• https://hv033.sse.codesandbox.io/graphiql -> aqui puedes ver un ejemplo de como queda el backend en codesandbox previa configuración de la BD Atlas en Codesandbox
+https://hv033.sse.codesandbox.io -> aqui puedes ver un ejemplo de como queda el frontend vanilla en codesandbox previa configuración de la BD Atlas en Codesandbox
+
+• https://hv033.sse.codesandbox.io/graphiql -> aqui puedes ver un ejemplo de como queda el backend Graphiql en codesandbox previa configuración de la BD Atlas en Codesandbox
 
 ---------------
 ### • Consulta para crear el documento publications en atlas (C) desde graphiql (B1, B2 o B3):
