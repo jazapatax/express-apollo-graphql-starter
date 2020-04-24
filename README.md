@@ -73,8 +73,6 @@ En los archivos de tu instalación del servidor en localhost:
 
 • Click en generate sandbox y listo! sigue los pasos para inicializar tu base de datos descomentando la inicialización en server.js y poniendo tus datos en el archivo variables.env 
 
-https://hv033.sse.codesandbox.io -> aqui puedes ver un ejemplo de como queda el frontend vanilla en codesandbox previa configuración de la BD Atlas en Codesandbox
-
 • https://hv033.sse.codesandbox.io/graphiql -> aqui puedes ver un ejemplo de como queda el backend Graphiql en codesandbox previa configuración de la BD Atlas en Codesandbox
 
 ---------------
