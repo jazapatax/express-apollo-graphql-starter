@@ -31,7 +31,6 @@ app.use("/graphiql", graphiqlExpress({ endpointURL: "/graphql" }));
 // Connect schemas with GraphQL
 app.use("/graphql",  bodyParser.json(), graphqlExpress({ schema, context: { Publication, User } }) );
 
-// vanilla routes
 app.get('/script.js', function(req, res) {
     res.sendFile(path.join(__dirname + '/script.js'));
 });
