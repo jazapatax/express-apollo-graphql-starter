@@ -32,9 +32,6 @@ app.use("/graphiql", graphiqlExpress({ endpointURL: "/graphql" }));
 app.use("/graphql",  bodyParser.json(), graphqlExpress({ schema, context: { Publication, User } }) );
 
 // vanilla routes
-app.get('/', function(req, res) {
-    res.sendFile(path.join(__dirname + '/index.html'));
-});
 app.get('/script.js', function(req, res) {
     res.sendFile(path.join(__dirname + '/script.js'));
 });
