@@ -31,6 +31,7 @@ pushd C:\
 && git clone https://github.com/null-point-sys/express-apollo-graphql-starter.git
 && cd express-apollo-graphql-starter
 && npm install
+&& yarn global remove create-react-app
 && npx create-react-app client
 && npm run dev
 
