@@ -32,7 +32,6 @@ pushd C:\
 && cd express-apollo-graphql-starter
 && npm install
 && npx create-react-app client
-&& create-react-app client
 && npm run dev
 
 • Como poner a correr este bash script automátizado en mi equipo:
