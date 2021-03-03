@@ -31,7 +31,9 @@ pushd C:\
 && git clone https://github.com/null-point-sys/express-apollo-graphql-starter.git
 && cd express-apollo-graphql-starter
 && npm install
-&& npm run server
+&& npm install -g create-react-app
+&& create-react-app client
+&& npm run dev
 
 • Como poner a correr este bash script automátizado en mi equipo:
 
